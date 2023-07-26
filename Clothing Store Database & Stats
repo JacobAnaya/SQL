@@ -1,0 +1,23 @@
+--Create A Custom Database With At Least 5 Columns & 15 Items--
+
+CREATE TABLE Js_Store (id INTEGER primary key, name text, price INTEGER, rating INTEGER, review text);
+
+INSERT INTO Js_Store VALUES (1, "Tee", 5.99, 5/5, "great tee, comfy material, would buy again");
+INSERT INTO Js_Store VALUES (2, "Hat", 10.99, 5/5, "awesome hat, getting the other colorways soon!");
+INSERT INTO Js_Store VALUES (3, "Pants", 7.99, 5/5, "sick length, need more for the week");
+INSERT INTO Js_Store VALUES (4, "Socks", 3.99, 5/5, "sweet socks!");
+INSERT INTO Js_Store VALUES (5, "Shoes", 15.99, 5/5, "remind me of a converse and a dc shoe mixed, love em so much!");      
+INSERT INTO Js_Store VALUES (6, "Laces", .50, 5/5, "for your shoes or hoodies");
+INSERT INTO Js_Store VALUES (7, "Rings", 20.99, 5/5, "harder than hard!");
+INSERT INTO Js_Store VALUES (8, "Chains", 25.99, 5/5, "DOPE!");
+INSERT INTO Js_Store VALUES (9, "Sunnies", 10.99, 5/5, "sun doesn't faze me!");
+INSERT INTO Js_Store VALUES (10, "Undies", 4.99, 5/5, "no skid marks here");
+INSERT INTO Js_Store VALUES (11, "Jacket", 17.99, 5/5, "TOUGH!");
+INSERT INTO Js_Store VALUES (12, "Hoodie", 14.99, 5/5, "so snuggly");
+INSERT INTO Js_Store VALUES (13, "Shorts", 6.99, 5/5, "so many cool designs, keep em coming!");
+INSERT INTO Js_Store VALUES (14, "Watch", 16.99, 5/5, "it dont tick-tock, it just glide.");
+INSERT INTO Js_Store VALUES (15, "Lighter", 1.99, 5/5, "these candles don't light themselves.");
+
+--Display The Database Order By Price & Show At Least 1 Statistic About The Items--
+
+SELECT name, SUM(price) FROM Js_Store GROUP BY price ORDER BY 0.5
